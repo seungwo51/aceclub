@@ -1,0 +1,1460 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACE CLUB | 에이스 클럽 공식 홈페이지</title>
+  <meta name="description" content="ACE CLUB 에이스 클럽 공식 홈페이지. 네온 사인 감성의 프리미엄 클럽 라운지, DJ 퍼포먼스, 게스트 입장, 테이블 예약 안내." />
+  <meta name="keywords" content="에이스 클럽, ACE CLUB, 클럽, 라운지, DJ, 테이블 예약, 게스트 입장, 네온 클럽" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#090813" />
+  <link rel="canonical" href="https://aceclub.co.kr/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:title" content="ACE CLUB | 에이스 클럽 공식 홈페이지" />
+  <meta property="og:description" content="네온 사인 감성의 프리미엄 클럽 라운지. 음악, 조명, 분위기, 테이블 예약까지 ACE CLUB에서 확인하세요." />
+  <meta property="og:url" content="https://aceclub.co.kr/" />
+  <meta property="og:site_name" content="ACE CLUB" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ACE CLUB | 에이스 클럽 공식 홈페이지" />
+  <meta name="twitter:description" content="네온 사인 감성의 프리미엄 클럽 라운지. ACE CLUB 공식 홈페이지." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NightClub",
+    "name": "ACE CLUB",
+    "alternateName": "에이스 클럽",
+    "url": "https://aceclub.co.kr/",
+    "description": "ACE CLUB 에이스 클럽 공식 홈페이지. DJ 퍼포먼스, 게스트 입장, 테이블 예약 안내를 제공하는 프리미엄 클럽 라운지입니다.",
+    "servesCuisine": "Beverages",
+    "areaServed": "KR",
+    "sameAs": []
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #060611;
+      --bg-2: #0b0920;
+      --panel: rgba(255, 255, 255, 0.075);
+      --panel-strong: rgba(255, 255, 255, 0.13);
+      --line: rgba(255, 255, 255, 0.18);
+      --line-hot: rgba(255, 28, 189, 0.52);
+      --text: #f8f7ff;
+      --muted: rgba(248, 247, 255, 0.72);
+      --dim: rgba(248, 247, 255, 0.56);
+      --pink: #ff2ddf;
+      --cyan: #18f7ff;
+      --violet: #8b5cff;
+      --gold: #ffd166;
+      --red: #ff3b77;
+      --shadow-pink: 0 0 24px rgba(255, 45, 223, 0.48), 0 0 54px rgba(255, 45, 223, 0.26);
+      --shadow-cyan: 0 0 24px rgba(24, 247, 255, 0.42), 0 0 54px rgba(24, 247, 255, 0.22);
+      --radius-xl: 34px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 18% 9%, rgba(255, 45, 223, 0.24), transparent 34%),
+        radial-gradient(circle at 88% 18%, rgba(24, 247, 255, 0.23), transparent 32%),
+        radial-gradient(circle at 50% 70%, rgba(139, 92, 255, 0.22), transparent 38%),
+        linear-gradient(180deg, #070613 0%, #090720 44%, #04040b 100%);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -2;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.92), rgba(0,0,0,0.18));
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0.22;
+      background:
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.045) 0px, rgba(255,255,255,0.045) 1px, transparent 1px, transparent 4px);
+      mix-blend-mode: screen;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    img { max-width: 100%; display: block; }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 14px;
+      z-index: 1000;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #fff;
+      color: #111;
+      font-weight: 800;
+    }
+
+    .skip-link:focus { left: 14px; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(18px);
+      background: rgba(6, 6, 17, 0.74);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+    }
+
+    .nav {
+      width: min(var(--max), calc(100% - 36px));
+      margin: 0 auto;
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: max-content;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      background: linear-gradient(135deg, rgba(255,45,223,0.85), rgba(24,247,255,0.68));
+      box-shadow: var(--shadow-pink);
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .brand-mark::before {
+      content: "A";
+      position: relative;
+      z-index: 2;
+      font-size: 24px;
+      font-weight: 950;
+      letter-spacing: -0.04em;
+      color: #fff;
+      text-shadow: 0 0 12px rgba(255,255,255,0.7);
+    }
+
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      inset: 2px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.4);
+      background: radial-gradient(circle at 30% 22%, rgba(255,255,255,0.5), transparent 30%);
+      z-index: 1;
+    }
+
+    .brand-title {
+      display: grid;
+      gap: 1px;
+      line-height: 1;
+    }
+
+    .brand-title strong {
+      font-size: 18px;
+      font-weight: 950;
+      letter-spacing: 0.08em;
+      text-shadow: 0 0 12px rgba(24,247,255,0.46);
+    }
+
+    .brand-title span {
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: rgba(255,255,255,0.78);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      padding: 10px 12px;
+      border-radius: 999px;
+      transition: background 160ms ease, color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: #fff;
+      background: rgba(255,255,255,0.10);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.14), 0 0 24px rgba(24,247,255,0.12);
+      outline: none;
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 126px;
+      height: 42px;
+      padding: 0 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #080615;
+      background: linear-gradient(135deg, var(--cyan), #fff 48%, var(--pink));
+      box-shadow: 0 0 24px rgba(24,247,255,0.28), 0 0 28px rgba(255,45,223,0.22);
+    }
+
+    main { position: relative; }
+
+    .section {
+      width: min(var(--max), calc(100% - 36px));
+      margin: 0 auto;
+      padding: 96px 0;
+    }
+
+    .hero {
+      position: relative;
+      min-height: calc(100svh - 74px);
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-inner {
+      width: min(var(--max), calc(100% - 36px));
+      margin: 0 auto;
+      padding: 78px 0 88px;
+      display: grid;
+      grid-template-columns: 1.04fr 0.96fr;
+      align-items: center;
+      gap: 46px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      gap: 9px;
+      padding: 8px 12px;
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 999px;
+      color: rgba(255,255,255,0.82);
+      background: rgba(255,255,255,0.07);
+      box-shadow: inset 0 0 18px rgba(255,255,255,0.05), 0 0 20px rgba(255,45,223,0.12);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 12px var(--cyan), 0 0 22px var(--cyan);
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    .hero h1 {
+      margin: 24px 0 20px;
+      font-size: clamp(54px, 9.2vw, 128px);
+      line-height: 0.88;
+      letter-spacing: -0.085em;
+      font-weight: 1000;
+      text-transform: uppercase;
+    }
+
+    .hero h1 span {
+      display: block;
+      position: relative;
+      width: fit-content;
+      color: #fff;
+      text-shadow:
+        0 0 10px rgba(255,255,255,0.72),
+        0 0 24px rgba(24,247,255,0.58),
+        0 0 64px rgba(255,45,223,0.44),
+        0 0 104px rgba(139,92,255,0.34);
+    }
+
+    .hero h1 span:nth-child(2) {
+      padding-left: clamp(12px, 6vw, 86px);
+      -webkit-text-stroke: 1px rgba(255,255,255,0.55);
+      color: rgba(255,255,255,0.12);
+      text-shadow: 0 0 18px rgba(255,45,223,0.64), 0 0 52px rgba(255,45,223,0.32);
+    }
+
+    .hero-copy {
+      max-width: 690px;
+      color: var(--muted);
+      font-size: clamp(16px, 2.1vw, 20px);
+      line-height: 1.75;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 20px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.18);
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .btn-primary {
+      color: #070611;
+      background: linear-gradient(135deg, var(--cyan), #ffffff 48%, var(--pink));
+      box-shadow: var(--shadow-cyan), var(--shadow-pink);
+    }
+
+    .btn-secondary {
+      color: #fff;
+      background: rgba(255,255,255,0.075);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08), 0 0 28px rgba(255,45,223,0.12);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 42px;
+      max-width: 620px;
+    }
+
+    .stat-card {
+      padding: 16px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.065);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+    }
+
+    .stat-card strong {
+      display: block;
+      font-size: 26px;
+      font-weight: 1000;
+      letter-spacing: -0.06em;
+    }
+
+    .stat-card span {
+      display: block;
+      margin-top: 5px;
+      color: var(--dim);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .visual {
+      position: relative;
+      min-height: 580px;
+      display: grid;
+      place-items: center;
+    }
+
+    .neon-card {
+      position: relative;
+      width: min(92vw, 470px);
+      aspect-ratio: 0.78;
+      border-radius: 46px;
+      border: 1px solid rgba(255,255,255,0.19);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.14), rgba(255,255,255,0.035)),
+        radial-gradient(circle at 32% 16%, rgba(255,45,223,0.37), transparent 36%),
+        radial-gradient(circle at 82% 34%, rgba(24,247,255,0.34), transparent 34%),
+        rgba(5,5,15,0.68);
+      box-shadow:
+        0 30px 90px rgba(0,0,0,0.46),
+        inset 0 0 0 1px rgba(255,255,255,0.06),
+        0 0 42px rgba(255,45,223,0.22),
+        0 0 56px rgba(24,247,255,0.16);
+      overflow: hidden;
+      isolation: isolate;
+      transform: rotate(2deg);
+    }
+
+    .neon-card::before {
+      content: "";
+      position: absolute;
+      inset: 20px;
+      border-radius: 34px;
+      border: 1px solid rgba(255,255,255,0.14);
+      box-shadow: inset 0 0 32px rgba(255,255,255,0.04);
+      z-index: 2;
+    }
+
+    .neon-card::after {
+      content: "";
+      position: absolute;
+      width: 160%;
+      height: 38%;
+      left: -30%;
+      top: 18%;
+      transform: rotate(-17deg);
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.19), transparent);
+      z-index: 1;
+    }
+
+    .ace-sign {
+      position: absolute;
+      inset: 48px 34px auto;
+      z-index: 3;
+      padding: 34px 18px;
+      border-radius: 32px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(2,2,10,0.46);
+      box-shadow: inset 0 0 34px rgba(24,247,255,0.09), 0 0 38px rgba(255,45,223,0.16);
+    }
+
+    .ace-sign span {
+      display: block;
+      font-weight: 1000;
+      letter-spacing: -0.1em;
+      line-height: 0.86;
+      text-transform: uppercase;
+    }
+
+    .ace-sign .big {
+      font-size: clamp(70px, 9vw, 106px);
+      color: #fff;
+      text-shadow: 0 0 8px #fff, 0 0 20px var(--cyan), 0 0 50px var(--pink);
+    }
+
+    .ace-sign .small {
+      margin-top: 12px;
+      font-size: 18px;
+      letter-spacing: 0.42em;
+      color: rgba(255,255,255,0.74);
+      text-shadow: 0 0 12px rgba(24,247,255,0.72);
+    }
+
+    .deck {
+      position: absolute;
+      z-index: 4;
+      left: 34px;
+      right: 34px;
+      bottom: 34px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .soundbar {
+      height: 118px;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      gap: 9px;
+      padding: 18px;
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(14px);
+    }
+
+    .soundbar i {
+      display: block;
+      width: 8px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--cyan), var(--pink));
+      box-shadow: 0 0 12px rgba(24,247,255,0.64), 0 0 18px rgba(255,45,223,0.36);
+    }
+
+    .soundbar i:nth-child(1) { height: 30%; }
+    .soundbar i:nth-child(2) { height: 64%; }
+    .soundbar i:nth-child(3) { height: 42%; }
+    .soundbar i:nth-child(4) { height: 84%; }
+    .soundbar i:nth-child(5) { height: 55%; }
+    .soundbar i:nth-child(6) { height: 96%; }
+    .soundbar i:nth-child(7) { height: 48%; }
+    .soundbar i:nth-child(8) { height: 74%; }
+    .soundbar i:nth-child(9) { height: 38%; }
+    .soundbar i:nth-child(10) { height: 68%; }
+    .soundbar i:nth-child(11) { height: 46%; }
+    .soundbar i:nth-child(12) { height: 88%; }
+
+    .visual-tag {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      color: rgba(255,255,255,0.78);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .floating-badge {
+      position: absolute;
+      z-index: 10;
+      padding: 14px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.09);
+      backdrop-filter: blur(15px);
+      box-shadow: 0 22px 48px rgba(0,0,0,0.26), 0 0 24px rgba(24,247,255,0.13);
+      font-size: 12px;
+      font-weight: 1000;
+      color: rgba(255,255,255,0.86);
+    }
+
+    .badge-top { top: 72px; right: -10px; }
+    .badge-bottom { bottom: 110px; left: -6px; }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(0.2px);
+      pointer-events: none;
+    }
+
+    .orb.one {
+      width: 182px;
+      height: 182px;
+      right: 1%;
+      top: 16%;
+      background: radial-gradient(circle, rgba(24,247,255,0.26), transparent 66%);
+      box-shadow: 0 0 90px rgba(24,247,255,0.2);
+    }
+
+    .orb.two {
+      width: 220px;
+      height: 220px;
+      left: -4%;
+      bottom: 15%;
+      background: radial-gradient(circle, rgba(255,45,223,0.25), transparent 66%);
+      box-shadow: 0 0 90px rgba(255,45,223,0.2);
+    }
+
+    .marquee {
+      border-block: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.045);
+      overflow: hidden;
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      gap: 0;
+      animation: drift 26s linear infinite;
+    }
+
+    .marquee span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 62px;
+      padding: 0 28px;
+      color: rgba(255,255,255,0.82);
+      font-weight: 950;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .marquee span:nth-child(odd) { color: var(--cyan); text-shadow: 0 0 12px rgba(24,247,255,0.58); }
+    .marquee span:nth-child(even) { color: var(--pink); text-shadow: 0 0 12px rgba(255,45,223,0.58); }
+
+    @keyframes drift {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 0.84fr 1.16fr;
+      gap: 30px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 1000;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      text-shadow: 0 0 14px rgba(24,247,255,0.42);
+    }
+
+    .kicker::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: linear-gradient(90deg, var(--cyan), transparent);
+      box-shadow: 0 0 12px var(--cyan);
+    }
+
+    h2 {
+      margin: 14px 0 0;
+      font-size: clamp(34px, 5vw, 68px);
+      line-height: 0.98;
+      letter-spacing: -0.07em;
+      font-weight: 1000;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.78;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .feature-card {
+      position: relative;
+      min-height: 250px;
+      padding: 24px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.14);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04)),
+        rgba(255,255,255,0.055);
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.24);
+    }
+
+    .feature-card::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      background: radial-gradient(circle at 28% 0%, rgba(255,45,223,0.30), transparent 34%), radial-gradient(circle at 90% 22%, rgba(24,247,255,0.24), transparent 34%);
+      opacity: 0.72;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .feature-card > * { position: relative; z-index: 1; }
+
+    .icon-box {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.20);
+      background: rgba(255,255,255,0.10);
+      box-shadow: inset 0 0 20px rgba(255,255,255,0.05), 0 0 24px rgba(24,247,255,0.16);
+      font-size: 24px;
+      font-weight: 1000;
+    }
+
+    .feature-card h3 {
+      margin: 54px 0 12px;
+      font-size: 24px;
+      line-height: 1.18;
+      letter-spacing: -0.04em;
+    }
+
+    .feature-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+      word-break: keep-all;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .panel {
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04)),
+        rgba(255,255,255,0.055);
+      box-shadow: 0 26px 80px rgba(0,0,0,0.25);
+      overflow: hidden;
+    }
+
+    .lineup-visual {
+      min-height: 590px;
+      padding: 28px;
+      position: relative;
+      display: grid;
+      align-content: end;
+      background:
+        radial-gradient(circle at 50% 22%, rgba(24,247,255,0.30), transparent 30%),
+        radial-gradient(circle at 68% 44%, rgba(255,45,223,0.22), transparent 36%),
+        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.025));
+      isolation: isolate;
+    }
+
+    .lineup-visual::before {
+      content: "";
+      position: absolute;
+      inset: 8%;
+      border-radius: 42px;
+      border: 1px solid rgba(255,255,255,0.11);
+      background:
+        linear-gradient(90deg, transparent 0 22%, rgba(255,255,255,0.05) 22% 23%, transparent 23% 44%, rgba(255,255,255,0.045) 44% 45%, transparent 45% 67%, rgba(255,255,255,0.045) 67% 68%, transparent 68%),
+        radial-gradient(circle at 50% 16%, rgba(255,255,255,0.12), transparent 24%);
+      z-index: -1;
+    }
+
+    .booth {
+      position: relative;
+      width: 100%;
+      min-height: 230px;
+      border-radius: 34px;
+      border: 1px solid rgba(255,255,255,0.13);
+      background: rgba(0,0,0,0.28);
+      box-shadow: inset 0 0 44px rgba(24,247,255,0.08), 0 0 32px rgba(255,45,223,0.16);
+      padding: 22px;
+    }
+
+    .booth-top {
+      height: 28px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--pink), var(--cyan), var(--violet));
+      box-shadow: 0 0 24px rgba(24,247,255,0.36), 0 0 28px rgba(255,45,223,0.28);
+    }
+
+    .turntables {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .disc {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.16);
+      background:
+        radial-gradient(circle, #fff 0 4%, transparent 4% 9%, rgba(255,255,255,0.12) 9% 10%, transparent 10% 22%, rgba(24,247,255,0.12) 22% 24%, transparent 24%),
+        conic-gradient(from 0deg, rgba(255,45,223,0.28), rgba(24,247,255,0.10), rgba(139,92,255,0.28), rgba(255,45,223,0.28));
+      box-shadow: inset 0 0 34px rgba(0,0,0,0.38), 0 0 28px rgba(24,247,255,0.12);
+    }
+
+    .lineup-list {
+      padding: 28px;
+      display: grid;
+      gap: 14px;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .lineup-item {
+      display: grid;
+      grid-template-columns: 86px 1fr auto;
+      gap: 18px;
+      align-items: center;
+      padding: 18px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.13);
+      background: rgba(255,255,255,0.055);
+    }
+
+    .lineup-item time {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 42px;
+      padding: 0 12px;
+      border-radius: 999px;
+      color: #fff;
+      background: rgba(255,45,223,0.15);
+      border: 1px solid rgba(255,45,223,0.28);
+      box-shadow: 0 0 18px rgba(255,45,223,0.16);
+      font-weight: 950;
+      font-size: 13px;
+    }
+
+    .lineup-item h3 {
+      margin: 0 0 4px;
+      font-size: 20px;
+      letter-spacing: -0.035em;
+    }
+
+    .lineup-item p {
+      margin: 0;
+      color: var(--dim);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(24,247,255,0.25);
+      color: rgba(255,255,255,0.82);
+      background: rgba(24,247,255,0.08);
+      font-size: 12px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .reservation-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .reservation-card {
+      position: relative;
+      min-height: 290px;
+      padding: 24px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.14);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.11), rgba(255,255,255,0.04)),
+        rgba(255,255,255,0.045);
+      overflow: hidden;
+    }
+
+    .reservation-card::before {
+      content: attr(data-num);
+      position: absolute;
+      right: 16px;
+      top: 4px;
+      font-size: 90px;
+      line-height: 1;
+      font-weight: 1000;
+      letter-spacing: -0.08em;
+      color: rgba(255,255,255,0.06);
+    }
+
+    .reservation-card strong {
+      display: block;
+      margin-bottom: 16px;
+      color: var(--cyan);
+      font-size: 13px;
+      font-weight: 1000;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .reservation-card h3 {
+      margin: 0 0 12px;
+      font-size: 23px;
+      letter-spacing: -0.05em;
+    }
+
+    .reservation-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 20px 22px;
+      border-radius: 22px;
+      border: 1px solid rgba(255, 209, 102, 0.25);
+      background: rgba(255, 209, 102, 0.07);
+      color: rgba(255,255,255,0.82);
+      line-height: 1.7;
+    }
+
+    .notice strong { color: var(--gold); }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr 1fr;
+      grid-auto-rows: 220px;
+      gap: 14px;
+    }
+
+    .gallery-card {
+      position: relative;
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background:
+        radial-gradient(circle at 28% 20%, rgba(255,255,255,0.16), transparent 18%),
+        radial-gradient(circle at 74% 26%, rgba(24,247,255,0.28), transparent 26%),
+        radial-gradient(circle at 50% 82%, rgba(255,45,223,0.25), transparent 30%),
+        linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.025));
+      overflow: hidden;
+      box-shadow: 0 28px 70px rgba(0,0,0,0.24);
+    }
+
+    .gallery-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(110deg, transparent, rgba(255,255,255,0.12), transparent),
+        repeating-linear-gradient(90deg, transparent 0 28px, rgba(255,255,255,0.035) 28px 29px);
+      opacity: 0.8;
+    }
+
+    .gallery-card b {
+      position: absolute;
+      left: 20px;
+      bottom: 18px;
+      z-index: 1;
+      font-size: 14px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      text-shadow: 0 0 14px rgba(255,255,255,0.5);
+    }
+
+    .gallery-card.tall { grid-row: span 2; }
+    .gallery-card.wide { grid-column: span 2; }
+
+    .rules {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .rule-card {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 16px;
+      padding: 22px;
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.055);
+    }
+
+    .rule-card .num {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      color: #070611;
+      font-weight: 1000;
+      background: linear-gradient(135deg, var(--cyan), #fff, var(--pink));
+      box-shadow: 0 0 24px rgba(24,247,255,0.22);
+    }
+
+    .rule-card h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      letter-spacing: -0.035em;
+    }
+
+    .rule-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.68;
+      word-break: keep-all;
+    }
+
+    .cta {
+      padding: 72px 0 100px;
+    }
+
+    .cta-box {
+      position: relative;
+      width: min(var(--max), calc(100% - 36px));
+      margin: 0 auto;
+      padding: clamp(34px, 6vw, 70px);
+      border-radius: 42px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background:
+        radial-gradient(circle at 18% 20%, rgba(255,45,223,0.26), transparent 34%),
+        radial-gradient(circle at 88% 18%, rgba(24,247,255,0.24), transparent 34%),
+        linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.045));
+      box-shadow: 0 34px 100px rgba(0,0,0,0.34), 0 0 54px rgba(255,45,223,0.10);
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: "ACE";
+      position: absolute;
+      right: -18px;
+      bottom: -38px;
+      font-size: clamp(112px, 18vw, 250px);
+      line-height: 0.78;
+      font-weight: 1000;
+      letter-spacing: -0.12em;
+      color: rgba(255,255,255,0.045);
+      pointer-events: none;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+    }
+
+    .cta h2 {
+      margin-bottom: 18px;
+      text-shadow: 0 0 26px rgba(255,45,223,0.22);
+    }
+
+    .cta p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .site-footer {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      background: rgba(0,0,0,0.22);
+    }
+
+    .footer-inner {
+      width: min(var(--max), calc(100% - 36px));
+      margin: 0 auto;
+      padding: 36px 0;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 22px;
+      align-items: center;
+      color: rgba(255,255,255,0.62);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+      color: rgba(255,255,255,0.74);
+      font-weight: 800;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.001ms !important;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .nav { min-height: 68px; }
+      .nav-links { display: none; }
+      .hero-inner { grid-template-columns: 1fr; padding-top: 58px; }
+      .visual { min-height: 520px; }
+      .section-head { grid-template-columns: 1fr; gap: 18px; }
+      .cards { grid-template-columns: 1fr; }
+      .split { grid-template-columns: 1fr; }
+      .reservation-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery { grid-template-columns: 1fr 1fr; }
+      .gallery-card.wide { grid-column: span 1; }
+    }
+
+    @media (max-width: 640px) {
+      .nav { width: min(100% - 28px, var(--max)); }
+      .brand-title span { display: none; }
+      .nav-cta { min-width: auto; height: 40px; padding: 0 14px; font-size: 13px; }
+      .hero { min-height: auto; }
+      .hero-inner { width: min(100% - 28px, var(--max)); gap: 26px; padding: 46px 0 56px; }
+      .hero h1 { margin-top: 20px; font-size: clamp(58px, 18vw, 94px); }
+      .hero-copy { font-size: 16px; line-height: 1.68; }
+      .hero-actions { margin-top: 26px; }
+      .btn { width: 100%; min-height: 50px; }
+      .hero-stats { grid-template-columns: 1fr; margin-top: 28px; }
+      .visual { min-height: 470px; }
+      .neon-card { width: min(100%, 390px); border-radius: 34px; transform: rotate(0deg); }
+      .ace-sign { inset: 34px 22px auto; }
+      .deck { left: 22px; right: 22px; bottom: 24px; }
+      .soundbar { height: 98px; gap: 7px; }
+      .soundbar i { width: 6px; }
+      .floating-badge { display: none; }
+      .section { width: min(100% - 28px, var(--max)); padding: 68px 0; }
+      h2 { font-size: clamp(32px, 12vw, 52px); }
+      .feature-card { min-height: auto; }
+      .lineup-visual { min-height: 420px; padding: 20px; }
+      .lineup-list { padding: 18px; }
+      .lineup-item { grid-template-columns: 1fr; gap: 10px; align-items: start; }
+      .pill { width: fit-content; }
+      .reservation-grid { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: 1fr; grid-auto-rows: 190px; }
+      .gallery-card.tall { grid-row: span 1; }
+      .rules { grid-template-columns: 1fr; }
+      .rule-card { grid-template-columns: 1fr; }
+      .cta { padding: 46px 0 72px; }
+      .cta-box { width: min(100% - 28px, var(--max)); border-radius: 30px; }
+      .footer-inner { width: min(100% - 28px, var(--max)); grid-template-columns: 1fr; }
+      .footer-links { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+  <header class="site-header" aria-label="ACE CLUB 상단 메뉴">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="ACE CLUB 홈으로 이동">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-title">
+          <strong>ACE CLUB</strong>
+          <span>Neon Night Lounge</span>
+        </span>
+      </a>
+
+      <div class="nav-links" aria-label="주요 메뉴">
+        <a href="#about">소개</a>
+        <a href="#lineup">라인업</a>
+        <a href="#table">예약</a>
+        <a href="#space">공간</a>
+        <a href="#guide">이용안내</a>
+      </div>
+
+      <a class="nav-cta" href="#reserve">예약 문의</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="orb one" aria-hidden="true"></div>
+      <div class="orb two" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Official Night Club</p>
+          <h1 id="hero-title"><span>ACE</span><span>CLUB</span></h1>
+          <p class="hero-copy">
+            에이스 클럽은 선명한 네온 조명, 감각적인 사운드, 밀도 높은 라운지 무드를 중심으로 설계된 프리미엄 클럽 공간입니다. 음악과 조명, 테이블 동선, 입장 경험까지 하나의 밤으로 완성합니다.
+          </p>
+          <div class="hero-actions" aria-label="주요 행동 버튼">
+            <a class="btn btn-primary" href="#reserve">테이블 · 게스트 문의</a>
+            <a class="btn btn-secondary" href="#lineup">오늘의 분위기 보기</a>
+          </div>
+          <div class="hero-stats" aria-label="ACE CLUB 주요 특징">
+            <div class="stat-card">
+              <strong>NEON</strong>
+              <span>시그니처 네온 라이트 연출</span>
+            </div>
+            <div class="stat-card">
+              <strong>DJ</strong>
+              <span>힙합 · EDM · 하우스 중심 사운드</span>
+            </div>
+            <div class="stat-card">
+              <strong>VIP</strong>
+              <span>테이블 예약 및 프라이빗 라운지</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual" aria-hidden="true">
+          <span class="floating-badge badge-top">Open Late · High Energy</span>
+          <span class="floating-badge badge-bottom">Guest · Table · Lounge</span>
+          <div class="neon-card">
+            <div class="ace-sign">
+              <span class="big">ACE</span>
+              <span class="small">CLUB</span>
+            </div>
+            <div class="deck">
+              <div class="soundbar">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <div class="visual-tag">
+                <span>Neon</span><span>Sound</span><span>Night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>ACE CLUB</span><span>NEON NIGHT</span><span>DJ PERFORMANCE</span><span>TABLE RESERVATION</span><span>PREMIUM LOUNGE</span><span>ACE CLUB</span><span>NEON NIGHT</span><span>DJ PERFORMANCE</span><span>TABLE RESERVATION</span><span>PREMIUM LOUNGE</span>
+      </div>
+    </div>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="section-head">
+        <div>
+          <span class="kicker">About ACE</span>
+          <h2 id="about-title">밤의 텐션을 설계한 네온 클럽</h2>
+        </div>
+        <p>
+          ACE CLUB은 단순히 음악이 큰 공간이 아니라, 입장 순간부터 조명·사운드·동선·라운지 감도가 이어지도록 구성한 클럽형 엔터테인먼트 공간입니다. 첫 방문자도 직관적으로 즐길 수 있고, 테이블 고객은 보다 안정적인 동선과 프라이빗한 분위기를 경험할 수 있습니다.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="feature-card">
+          <div class="icon-box" aria-hidden="true">A</div>
+          <h3>시그니처 네온 무드</h3>
+          <p>핑크·시안·바이올렛 계열의 네온 라이트를 중심으로 강한 첫인상과 사진에 잘 남는 공간감을 제공합니다.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon-box" aria-hidden="true">♬</div>
+          <h3>고밀도 사운드 플로어</h3>
+          <p>힙합, EDM, 하우스, R&amp;B 등 밤 시간대에 맞춘 사운드 흐름으로 플로어의 에너지를 유지합니다.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon-box" aria-hidden="true">V</div>
+          <h3>테이블 중심 라운지</h3>
+          <p>게스트 입장부터 테이블 예약까지 목적에 따라 선택할 수 있는 구조로, 모임·생일·애프터 파티에 적합합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="lineup" class="section" aria-labelledby="lineup-title">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Line-up</span>
+          <h2 id="lineup-title">음악이 먼저 분위기를 만든다</h2>
+        </div>
+        <p>
+          특정 장르에 과도하게 고정하기보다, 시간대별로 밀도를 조정하는 방식의 클럽 라인업을 구성합니다. 초반에는 라운지 감도, 피크타임에는 강한 베이스와 네온 조명 연출이 중심입니다.
+        </p>
+      </div>
+
+      <div class="split">
+        <div class="panel lineup-visual" aria-label="DJ 부스 일러스트">
+          <div class="booth">
+            <div class="booth-top"></div>
+            <div class="turntables">
+              <div class="disc"></div>
+              <div class="disc"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel lineup-list">
+          <article class="lineup-item">
+            <time datetime="21:00">21:00</time>
+            <div>
+              <h3>Warm-up Lounge</h3>
+              <p>대화와 입장이 자연스럽게 이어지는 라운지형 사운드.</p>
+            </div>
+            <span class="pill">Lounge</span>
+          </article>
+          <article class="lineup-item">
+            <time datetime="23:00">23:00</time>
+            <div>
+              <h3>Hip-hop &amp; R&amp;B</h3>
+              <p>플로어 집중도가 올라가는 시간대의 힙합·알앤비 셋.</p>
+            </div>
+            <span class="pill">Main</span>
+          </article>
+          <article class="lineup-item">
+            <time datetime="00:30">00:30</time>
+            <div>
+              <h3>EDM Peak Time</h3>
+              <p>베이스, 드롭, 조명을 결합한 피크타임 퍼포먼스.</p>
+            </div>
+            <span class="pill">Peak</span>
+          </article>
+          <article class="lineup-item">
+            <time datetime="02:00">02:00</time>
+            <div>
+              <h3>Late Night Mix</h3>
+              <p>하우스·댄스·리믹스 중심의 후반부 클럽 무드.</p>
+            </div>
+            <span class="pill">Late</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="table" class="section" aria-labelledby="table-title">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Reservation</span>
+          <h2 id="table-title">게스트 입장부터 테이블 예약까지</h2>
+        </div>
+        <p>
+          방문 목적과 인원, 선호 좌석, 예산 범위에 따라 입장 방식이 달라질 수 있습니다. 실제 운영 조건은 요일·시간·현장 상황에 따라 달라질 수 있으므로 예약 전 확인이 필요합니다.
+        </p>
+      </div>
+
+      <div class="reservation-grid">
+        <article class="reservation-card" data-num="01">
+          <strong>Guest</strong>
+          <h3>게스트 입장</h3>
+          <p>방문 인원, 성별 구성, 도착 예정 시간을 기준으로 입장 가능 여부를 사전에 확인합니다.</p>
+        </article>
+        <article class="reservation-card" data-num="02">
+          <strong>Table</strong>
+          <h3>테이블 예약</h3>
+          <p>기념일, 단체 모임, 프라이빗한 이용이 필요한 경우 테이블 예약을 우선 검토합니다.</p>
+        </article>
+        <article class="reservation-card" data-num="03">
+          <strong>Event</strong>
+          <h3>생일 · 파티</h3>
+          <p>케이크, 샴페인, 사진 촬영 등 이벤트성 방문은 사전 문의를 통해 동선을 조정합니다.</p>
+        </article>
+        <article class="reservation-card" data-num="04">
+          <strong>VIP</strong>
+          <h3>프라이빗 라운지</h3>
+          <p>보다 독립적인 좌석과 안정적인 응대가 필요한 고객을 위한 라운지형 옵션을 제공합니다.</p>
+        </article>
+      </div>
+
+      <div class="notice" role="note">
+        <strong>이용 전 확인:</strong> 클럽 입장은 현장 혼잡도, 드레스 코드, 신분증 확인, 만 19세 이상 여부, 영업일정에 따라 제한될 수 있습니다. 아래 문구는 홈페이지 기본 안내용이며, 실제 가격·운영시간·예약 채널은 운영자 정보로 교체하는 것이 바람직합니다.
+      </div>
+    </section>
+
+    <section id="space" class="section" aria-labelledby="space-title">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Space</span>
+          <h2 id="space-title">빛, 사운드, 플로어의 균형</h2>
+        </div>
+        <p>
+          클럽 홈페이지는 방문자가 ‘어떤 분위기인지’를 즉시 판단할 수 있어야 합니다. 아래 영역은 실제 사진을 넣기 전에도 네온 클럽의 방향성을 보여주는 그래픽 갤러리로 구성했습니다. 운영 사진이 확보되면 동일 위치에 실제 이미지로 교체하면 됩니다.
+        </p>
+      </div>
+
+      <div class="gallery" aria-label="ACE CLUB 공간 이미지 영역">
+        <div class="gallery-card tall"><b>Main Floor</b></div>
+        <div class="gallery-card"><b>Neon Bar</b></div>
+        <div class="gallery-card"><b>VIP Mood</b></div>
+        <div class="gallery-card wide"><b>Laser &amp; Bass</b></div>
+      </div>
+    </section>
+
+    <section id="guide" class="section" aria-labelledby="guide-title">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Guide</span>
+          <h2 id="guide-title">방문 전 확인할 기본 안내</h2>
+        </div>
+        <p>
+          클럽 운영은 현장 상황에 따라 달라질 수 있으므로, 홈페이지에서는 확정적 표현보다 기본 원칙과 확인 필요사항을 명확히 제시하는 편이 안전합니다. 아래 문구는 운영 정보 확정 후 세부 수정을 전제로 한 기본안입니다.
+        </p>
+      </div>
+
+      <div class="rules">
+        <article class="rule-card">
+          <span class="num">1</span>
+          <div>
+            <h3>신분증 확인</h3>
+            <p>입장 시 실물 신분증 확인이 필요할 수 있습니다. 미성년자 입장은 제한됩니다.</p>
+          </div>
+        </article>
+        <article class="rule-card">
+          <span class="num">2</span>
+          <div>
+            <h3>드레스 코드</h3>
+            <p>슬리퍼, 과도하게 캐주얼한 복장, 현장 분위기에 맞지 않는 착장은 입장이 제한될 수 있습니다.</p>
+          </div>
+        </article>
+        <article class="rule-card">
+          <span class="num">3</span>
+          <div>
+            <h3>혼잡도 기준</h3>
+            <p>피크타임에는 대기 또는 입장 제한이 발생할 수 있으므로 사전 문의가 권장됩니다.</p>
+          </div>
+        </article>
+        <article class="rule-card">
+          <span class="num">4</span>
+          <div>
+            <h3>테이블 변경</h3>
+            <p>좌석 배정은 예약 순서, 인원, 현장 운영상 필요에 따라 조정될 수 있습니다.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="reserve" class="cta" aria-labelledby="reserve-title">
+      <div class="cta-box">
+        <div class="cta-content">
+          <span class="kicker">Contact</span>
+          <h2 id="reserve-title">오늘 밤, ACE CLUB으로 연결</h2>
+          <p>
+            게스트 입장, 테이블 예약, 단체 방문, 생일 파티 문의를 한 곳에서 받을 수 있도록 구성한 CTA 영역입니다. 실제 운영 전에는 카카오톡 채널, 전화번호, 인스타그램, 네이버 플레이스 링크 등 확정 채널을 버튼에 연결하세요.
+          </p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="tel:000-0000-0000" aria-label="예약 전화 문의">예약 전화 문의</a>
+            <a class="btn btn-secondary" href="https://www.instagram.com/" rel="noopener" target="_blank">인스타그램 보기</a>
+            <a class="btn btn-secondary" href="/naver.html">네이버 예약 안내</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>ACE CLUB · 에이스 클럽</strong><br />
+        본 페이지는 ACE CLUB 공식 홈페이지용 정적 HTML 시안입니다. 주소, 영업시간, 가격, 예약 채널, 사업자 정보는 실제 운영 정보로 교체해야 합니다.<br />
+        © <span id="year">2026</span> ACE CLUB. All rights reserved.
+      </div>
+      <div class="footer-links" aria-label="하단 링크">
+        <a href="#about">소개</a>
+        <a href="#table">예약</a>
+        <a href="#guide">이용안내</a>
+        <a href="#reserve">문의</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
