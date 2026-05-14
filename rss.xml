@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ACE CLUB SEOUL | 에이스 클럽</title>
+    <link>https://aceclub.co.kr/</link>
+    <atom:link href="https://aceclub.co.kr/rss.xml" rel="self" type="application/rss+xml" />
+    <description>에이스 클럽, 클럽 에이스, 강남클럽 예약 안내. 조판, 메뉴 및 가격, 사람들, 오시는 길, QNA.</description>
+    <language>ko-KR</language>
+    <lastBuildDate>Thu, 14 May 2026 00:00:00 +0900</lastBuildDate>
+    <item>
+      <title>에이스 클럽 강남클럽 예약 안내 페이지</title>
+      <link>https://aceclub.co.kr/</link>
+      <guid>https://aceclub.co.kr/#homepage-20260514</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0900</pubDate>
+      <description>서울시 서초구 강남대로 597 ACE CLUB SEOUL. 조판 지도, 메뉴 및 가격, 사람들, 오시는 길, QNA, 네임드 문자·카톡 예약 문의.</description>
+    </item>
+  </channel>
+</rss>

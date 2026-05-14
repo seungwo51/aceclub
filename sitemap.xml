@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://aceclub.co.kr/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://aceclub.co.kr/assets/01-map.jpg</image:loc><image:title>에이스 클럽 조판 지도</image:title></image:image>
+    <image:image><image:loc>https://aceclub.co.kr/assets/10-people.jpg</image:loc><image:title>클럽 에이스 사람들 및 현장 분위기</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://aceclub.co.kr/llms.txt</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://aceclub.co.kr/rss.xml</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+</urlset>
