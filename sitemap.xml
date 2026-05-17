@@ -2,22 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://aceclub.co.kr/</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <image:image><image:loc>https://aceclub.co.kr/assets/01-map.jpg</image:loc><image:title>에이스 클럽 조판 지도</image:title></image:image>
-    <image:image><image:loc>https://aceclub.co.kr/assets/10-people.jpg</image:loc><image:title>클럽 에이스 사람들 및 현장 분위기</image:title></image:image>
+    <image:image>
+      <image:loc>https://aceclub.co.kr/assets/10-people.jpg</image:loc>
+      <image:title>에이스 클럽 강남클럽 현장 분위기</image:title>
+      <image:caption>에이스 클럽 강남클럽 현장 분위기 | ACE CLUB SEOUL</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aceclub.co.kr/assets/01-map.jpg</image:loc>
+      <image:title>에이스 클럽 조판 지도 및 테이블 안내</image:title>
+      <image:caption>에이스 클럽 조판 지도 및 테이블 안내 | ACE CLUB SEOUL</image:caption>
+    </image:image>
   </url>
   <url>
-    <loc>https://aceclub.co.kr/llms.txt</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://aceclub.co.kr/gangnam-club-ranking/</loc>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://aceclub.co.kr/assets/gangnam-club-ranking-2026.jpg</image:loc>
+      <image:title>2026 강남 클럽 순위 정리</image:title>
+      <image:caption>2026 강남 클럽 순위 정리 | ACE CLUB SEOUL</image:caption>
+    </image:image>
   </url>
   <url>
-    <loc>https://aceclub.co.kr/rss.xml</loc>
-    <lastmod>2026-05-14</lastmod>
+    <loc>https://aceclub.co.kr/gangnam-club-guide/</loc>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://aceclub.co.kr/assets/gangnam-club-guide-2026.jpg</image:loc>
+      <image:title>2026 강남 클럽 추천 가이드</image:title>
+      <image:caption>2026 강남 클럽 추천 가이드 | ACE CLUB SEOUL</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://aceclub.co.kr/gangnam-club-guest/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://aceclub.co.kr/assets/gangnam-club-guest-free-entry.jpg</image:loc>
+      <image:title>강남 클럽 게스트 무료입장 기준</image:title>
+      <image:caption>강남 클럽 게스트 무료입장 기준 | ACE CLUB SEOUL</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://aceclub.co.kr/gangnam-club-table/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://aceclub.co.kr/assets/gangnam-club-table-price.jpg</image:loc>
+      <image:title>강남 클럽 테이블 가격 및 예약 팁</image:title>
+      <image:caption>강남 클럽 테이블 가격 및 예약 팁 | ACE CLUB SEOUL</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://aceclub.co.kr/gangnam-club-ace/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://aceclub.co.kr/assets/gangnam-club-ace-renewal.jpg</image:loc>
+      <image:title>강남 클럽 레이스 에이스 리뉴얼</image:title>
+      <image:caption>강남 클럽 레이스 에이스 리뉴얼 | ACE CLUB SEOUL</image:caption>
+    </image:image>
   </url>
 </urlset>
