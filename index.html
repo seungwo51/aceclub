@@ -98,6 +98,16 @@
     .hero-instagram-cta{display:flex;align-items:center;justify-content:center;gap:12px;margin:12px auto 0;max-width:760px;padding:14px 16px;border:1px solid rgba(255,43,209,.42);border-radius:18px;background:linear-gradient(135deg,rgba(255,43,209,.20),rgba(155,53,255,.18),rgba(79,244,255,.10));box-shadow:0 0 24px rgba(255,43,209,.16);backdrop-filter:blur(10px);font-weight:950;letter-spacing:-.02em}
     .hero-instagram-cta span{display:inline-flex;align-items:center;justify-content:center;min-width:92px;padding:6px 10px;border-radius:999px;background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4);color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.10em;box-shadow:0 0 15px rgba(221,42,123,.34)}
     .hero-instagram-cta strong{display:block;color:#fff;font-size:15px;text-shadow:0 0 14px rgba(255,43,209,.28)}
+
+    .hero-guide-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin:12px auto 0;max-width:880px}
+    .hero-guide-card{position:relative;overflow:hidden;min-height:82px;padding:13px 10px;border:1px solid rgba(255,255,255,.13);border-radius:18px;background:linear-gradient(180deg,rgba(24,10,43,.64),rgba(9,4,16,.74));box-shadow:0 0 18px rgba(155,53,255,.16);text-align:left;backdrop-filter:blur(10px)}
+    .hero-guide-card:before{content:"";position:absolute;inset:-70% -50%;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.14) 50%,transparent 62%);transform:translateX(-44%);transition:transform .5s ease;pointer-events:none}
+    .hero-guide-card:hover,.hero-guide-card:focus-visible{border-color:rgba(255,43,209,.62);box-shadow:0 0 24px rgba(255,43,209,.24),0 0 28px rgba(79,244,255,.10)}
+    .hero-guide-card:hover:before,.hero-guide-card:focus-visible:before{transform:translateX(44%)}
+    .hero-guide-card b{display:block;color:#fff;font-size:14px;line-height:1.25;letter-spacing:-.04em;text-shadow:0 0 14px rgba(255,43,209,.26)}
+    .hero-guide-card small{display:block;margin-top:7px;color:#cfc6e6;font-size:11px;line-height:1.38;font-weight:750}
+    .hero-guide-card em{display:inline-flex;margin-bottom:7px;padding:3px 7px;border-radius:999px;background:rgba(255,43,209,.16);color:#ffe7ff;font-size:10px;font-style:normal;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+
     section{scroll-margin-top:78px;padding:54px 0;border-top:1px solid rgba(255,255,255,.06)}
     #people{padding-top:32px}
     .section-head{margin-bottom:18px}.eyebrow{margin:0 0 8px;color:var(--cyan);font-size:12px;font-weight:900;letter-spacing:.24em;text-transform:uppercase;text-shadow:0 0 15px rgba(79,244,255,.44)}
@@ -134,6 +144,10 @@
     .lineup-frame{width:min(100%,760px);margin:0 auto}.lineup-frame picture,.lineup-frame img{width:100%}.lineup-frame img{border-radius:22px;border:1px solid rgba(255,255,255,.14);box-shadow:0 0 26px rgba(255,43,43,.18);background:#050209}
     .lineup-note{margin:14px auto 0;width:min(100%,760px);color:#d8cfea;font-size:13px;line-height:1.68;font-weight:700;text-align:center}
 
+
+    @media (max-width:820px){.hero-guide-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:520px}.hero-guide-card{min-height:78px}}
+    @media (max-width:420px){.hero-guide-grid{grid-template-columns:1fr;max-width:330px}.hero-guide-card{text-align:center}}
+
     @media (min-width:720px){.topbar-inner{padding-inline:24px}.brand img{width:60px}.nav a{font-size:13px;padding-inline:13px}.quick-facts{gap:14px}.fact{padding:17px}.zone-grid{grid-template-columns:repeat(2,1fr)}.guide-grid{grid-template-columns:repeat(2,1fr)}.location-card{grid-template-columns:1.05fr .95fr}.panel-pad{padding:20px}.hero-content{padding-bottom:46px}.fixed-cta a{font-size:16px}}
     @media (max-width:420px){.topbar-inner{gap:7px;padding-inline:10px}.brand{min-width:102px}.brand img{width:42px}.brand-text strong{font-size:11px}.brand-text span{font-size:9px}.nav a{font-size:11px;padding:8px 9px}.hero{min-height:70svh}.hero-content{padding-top:50px;transform:translateY(-3svh)}.hero-lead{font-size:14px}.quick-facts{grid-template-columns:1fr;max-width:330px}.car-btn{width:38px;height:38px}.section-head{margin-bottom:15px}.fixed-cta{padding-inline:9px}.fixed-cta a{min-height:51px;font-size:14px}}
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.carousel-track{transition:none}.hero-animation .eq i,.hero-animation .neon-orbit,.hero-animation .laser-line,.fact,.fact:before{animation:none}}
@@ -167,6 +181,43 @@
     ]
   }
   </script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "강남 클럽 세부 가이드",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "강남 클럽 순위",
+      "url": "https://aceclub.co.kr/gangnam-club-ranking.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "강남 클럽 추천",
+      "url": "https://aceclub.co.kr/gangnam-club-guide.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "강남 클럽 게스트",
+      "url": "https://aceclub.co.kr/gangnam-club-guest.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "강남 클럽 테이블",
+      "url": "https://aceclub.co.kr/gangnam-club-table.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "강남 클럽 레이스폐업",
+      "url": "https://aceclub.co.kr/gangnam-club-ace.html"
+    }
+  ]
+}</script>
 </head>
 <body>
   <div class="page-glow" aria-hidden="true"></div>
@@ -208,6 +259,13 @@
         <a class="hero-instagram-cta" href="https://www.instagram.com/park_ace_club?igsh=MTV3ODE5bml1a3h1Zw%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="에이스 클럽 인스타그램 바로가기">
           <span>Instagram</span><strong>@park_ace_club 바로가기</strong>
         </a>
+        <div class="hero-guide-grid" aria-label="강남 클럽 세부 가이드 바로가기">
+          <a class="hero-guide-card" href="gangnam-club-ranking.html"><em>Rank</em><b>강남 클럽 순위</b><small>2026.05 기준 순위·장단점</small></a>
+          <a class="hero-guide-card" href="gangnam-club-guide.html"><em>Guide</em><b>강남 클럽 추천</b><small>방문 기준·분위기 정리</small></a>
+          <a class="hero-guide-card" href="gangnam-club-guest.html"><em>Guest</em><b>강남 클럽 게스트</b><small>무료입장·입뺀 기준</small></a>
+          <a class="hero-guide-card" href="gangnam-club-table.html"><em>Table</em><b>강남 클럽 테이블</b><small>가격·비용·예약 팁</small></a>
+          <a class="hero-guide-card" href="gangnam-club-ace.html"><em>Ace</em><b>레이스폐업·에이스</b><small>리뉴얼 흐름 정리</small></a>
+        </div>
       </div>
     </section>
 
