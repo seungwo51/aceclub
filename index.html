@@ -111,8 +111,8 @@
     section{scroll-margin-top:78px;padding:54px 0;border-top:1px solid rgba(255,255,255,.06)}
     #people{padding-top:32px}
     .section-head{margin-bottom:18px}.eyebrow{margin:0 0 8px;color:var(--cyan);font-size:12px;font-weight:900;letter-spacing:.24em;text-transform:uppercase;text-shadow:0 0 15px rgba(79,244,255,.44)}
-    h2{margin:0;font-size:clamp(27px,8vw,54px);line-height:1.02;letter-spacing:-.04em;text-shadow:0 0 24px rgba(155,53,255,.28)}
-    .desc{margin:12px 0 0;color:#d8cfea;line-height:1.72;font-size:14.5px;font-weight:600}.desc b{color:#fff}.desc .keyword{color:#ffe7ff;text-decoration:underline;text-decoration-color:rgba(255,43,209,.42);text-underline-offset:4px}
+    h2{position:relative;display:inline-block;margin:0;padding:0 2px 10px;font-size:clamp(29px,8.4vw,56px);line-height:1.02;letter-spacing:.01em;font-weight:950;text-transform:uppercase;background:linear-gradient(90deg,#ffffff 0%,var(--cyan) 34%,var(--pink) 68%,#ffffff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 13px rgba(79,244,255,.28)) drop-shadow(0 0 22px rgba(255,43,209,.22))}h2:after{content:"";position:absolute;left:2px;right:2px;bottom:0;height:2px;border-radius:999px;background:linear-gradient(90deg,transparent,var(--cyan),var(--pink),transparent);box-shadow:0 0 14px rgba(255,43,209,.45),0 0 12px rgba(79,244,255,.32)}
+    .desc{margin:14px 0 0;color:#f0e9ff;line-height:1.78;font-size:clamp(16px,4.2vw,18px);font-weight:750;letter-spacing:-.03em;text-align:left;word-break:keep-all;overflow-wrap:break-word;padding:13px 14px;border:1px solid rgba(255,255,255,.10);border-left:4px solid var(--pink);border-radius:16px;background:linear-gradient(90deg,rgba(255,43,209,.12),rgba(79,244,255,.06));box-shadow:0 0 18px rgba(155,53,255,.10)}.desc b{color:#fff}.desc .keyword{color:#ffe7ff;text-decoration:underline;text-decoration-color:rgba(255,43,209,.42);text-underline-offset:4px}
     .panel{border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg,rgba(24,10,43,.72),rgba(9,4,16,.88));box-shadow:var(--shadow);overflow:hidden}.panel-pad{padding:16px}
     .map-frame{padding:10px;background:radial-gradient(circle at 50% 90%,rgba(155,53,255,.26),transparent 38%),rgba(255,255,255,.03)}
     .map-frame img{width:100%;border-radius:18px;border:1px solid rgba(255,255,255,.08);background:#050209}
@@ -123,7 +123,7 @@
     .car-btn{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.58);color:#fff;font-size:24px;font-weight:900;display:grid;place-items:center;box-shadow:0 0 18px rgba(155,53,255,.25);z-index:4}.car-btn.prev{left:10px}.car-btn.next{right:10px}.dots{display:flex;justify-content:center;gap:7px;margin-top:12px}.dots button{width:8px;height:8px;border:0;border-radius:999px;background:rgba(255,255,255,.26);padding:0}.dots button[aria-current="true"]{width:26px;background:linear-gradient(90deg,var(--pink),var(--purple));box-shadow:0 0 14px rgba(255,43,209,.42)}
     .guide-grid{display:grid;gap:10px;margin-top:14px}.guide-card{padding:15px;border:1px solid rgba(255,255,255,.10);border-radius:18px;background:rgba(255,255,255,.055)}.guide-card strong{display:block;font-size:15px;color:#fff}.guide-card p,.guide-card ul{margin:7px 0 0;color:#d8cfea;font-size:13px;line-height:1.65;font-weight:650}.guide-card ul{padding-left:18px}.guide-card li+li{margin-top:4px}.guide-card .price{color:var(--pink);font-weight:950;text-shadow:0 0 12px rgba(255,43,209,.36)}
     .dress{margin-top:14px;padding:15px 16px;border-left:4px solid var(--pink);border-radius:16px;background:linear-gradient(90deg,rgba(255,43,209,.13),rgba(255,255,255,.04));line-height:1.72;color:#efe7ff;font-size:14px;font-weight:700}.dress b{color:#fff}
-    .location-card{display:grid;gap:14px}.address{padding:19px;border:1px solid rgba(255,255,255,.10);border-radius:22px;background:linear-gradient(135deg,rgba(255,43,209,.10),rgba(79,244,255,.08))}.address strong{display:block;font-size:23px;line-height:1.3}.address p{margin:10px 0 0;color:#d8cfea;line-height:1.7;font-weight:650}.address-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.mini-map{min-height:210px;border-radius:22px;border:1px solid rgba(255,255,255,.11);background:radial-gradient(circle at 60% 42%,rgba(155,53,255,.36),transparent 24%),linear-gradient(135deg,rgba(255,255,255,.09),rgba(255,255,255,.035));display:grid;place-items:center;padding:20px;text-align:center;position:relative;overflow:hidden}.mini-map:before{content:"";position:absolute;inset:24px;border:1px solid rgba(255,255,255,.1);border-radius:20px}.pin{position:relative;z-index:2}.pin span{display:grid;place-items:center;width:62px;height:62px;margin:0 auto 12px;border-radius:999px;background:linear-gradient(135deg,var(--pink),var(--purple));box-shadow:0 0 34px rgba(255,43,209,.45);font-size:28px}.pin b{display:block;font-size:18px}.pin small{display:block;margin-top:6px;color:var(--muted);font-weight:750}
+    .location-card{display:grid;gap:14px}.address,.mini-map{min-height:230px;padding:24px;border:1px solid rgba(255,255,255,.10);border-radius:22px;background:linear-gradient(135deg,rgba(255,43,209,.16),rgba(79,244,255,.10));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;animation:locationCardPulse 3.6s ease-in-out infinite}.mini-map{animation-delay:.35s}.address:before,.mini-map:before{content:"";position:absolute;inset:24px;border:1px solid rgba(255,255,255,.10);border-radius:20px;pointer-events:none}.address strong,.address p,.pin{position:relative;z-index:2}.address strong{display:block;font-size:clamp(25px,4vw,34px);line-height:1.3;text-shadow:0 0 18px rgba(255,43,209,.34)}.address p{margin:14px 0 0;color:#efe7ff;line-height:1.78;font-size:clamp(15px,2.6vw,18px);font-weight:800}.address-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.pin{animation:mapFloat 3.4s ease-in-out infinite}.pin span{display:grid;place-items:center;width:92px;height:92px;margin:0 auto 15px;border-radius:999px;background:linear-gradient(135deg,var(--pink),var(--purple));box-shadow:0 0 34px rgba(255,43,209,.52),inset 0 0 16px rgba(255,255,255,.18);color:#fff;animation:mapIconPulse 2.6s ease-in-out infinite}.pin b{display:block;font-size:clamp(20px,3vw,28px);text-shadow:0 0 18px rgba(255,43,209,.34)}.pin small{display:block;margin-top:8px;color:#efe7ff;font-size:clamp(13px,2vw,16px);font-weight:800}
     .faq-list{display:grid;gap:10px}.faq-item{border:1px solid rgba(255,255,255,.11);border-radius:18px;background:rgba(255,255,255,.05);overflow:hidden}.faq-item summary{cursor:pointer;padding:17px;font-weight:900;list-style:none}.faq-item summary::-webkit-details-marker{display:none}.faq-item p{margin:0;padding:0 17px 17px;color:#d9d2ea;line-height:1.7;font-size:14px;font-weight:650}.faq-item[open]{border-color:rgba(255,43,209,.34);box-shadow:0 0 22px rgba(255,43,209,.08)}
     footer{padding:34px 0 42px;color:#9288aa;text-align:center;border-top:1px solid rgba(255,255,255,.08)}footer img{width:120px;margin:0 auto 14px;filter:drop-shadow(0 0 18px rgba(155,53,255,.35))}footer p{margin:6px 0;font-size:12px;line-height:1.55}
     .fixed-cta{position:fixed;left:0;right:0;bottom:0;z-index:80;padding:10px 12px calc(10px + var(--safe-bottom));background:linear-gradient(180deg,rgba(5,2,9,.18),rgba(5,2,9,.96) 28%,#050209);backdrop-filter:blur(14px);border-top:1px solid rgba(255,255,255,.12)}
@@ -143,6 +143,10 @@
     .lineup-card{background:radial-gradient(circle at 50% 0,rgba(255,43,43,.22),transparent 38%),linear-gradient(180deg,rgba(24,10,43,.72),rgba(9,4,16,.92))}
     .lineup-frame{width:min(100%,760px);margin:0 auto}.lineup-frame picture,.lineup-frame img{width:100%}.lineup-frame img{border-radius:22px;border:1px solid rgba(255,255,255,.14);box-shadow:0 0 26px rgba(255,43,43,.18);background:#050209}
     .lineup-note{margin:14px auto 0;width:min(100%,760px);color:#d8cfea;font-size:13px;line-height:1.68;font-weight:700;text-align:center}
+    .open-card{background:radial-gradient(circle at 50% 0,rgba(79,244,255,.18),transparent 40%),linear-gradient(180deg,rgba(24,10,43,.72),rgba(9,4,16,.92))}.open-frame{width:min(100%,760px);margin:0 auto}.open-frame picture,.open-frame img{width:100%}.open-frame img{border-radius:22px;border:1px solid rgba(255,255,255,.14);box-shadow:0 0 28px rgba(79,244,255,.22),0 0 36px rgba(255,43,209,.14);background:#050209}
+    @keyframes locationCardPulse{0%,100%{box-shadow:0 0 0 rgba(255,43,209,0)}50%{box-shadow:0 0 28px rgba(255,43,209,.18),0 0 22px rgba(79,244,255,.12)}}
+    @keyframes mapFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    @keyframes mapIconPulse{0%,100%{transform:scale(1);filter:drop-shadow(0 0 0 rgba(255,43,209,0))}50%{transform:scale(1.06);filter:drop-shadow(0 0 18px rgba(255,43,209,.46))}}
 
 
     @media (max-width:820px){.hero-guide-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:520px}.hero-guide-card{min-height:78px}}
@@ -150,7 +154,7 @@
 
     @media (min-width:720px){.topbar-inner{padding-inline:24px}.brand img{width:60px}.nav a{font-size:13px;padding-inline:13px}.quick-facts{gap:14px}.fact{padding:17px}.zone-grid{grid-template-columns:repeat(2,1fr)}.guide-grid{grid-template-columns:repeat(2,1fr)}.location-card{grid-template-columns:1.05fr .95fr}.panel-pad{padding:20px}.hero-content{padding-bottom:46px}.fixed-cta a{font-size:16px}}
     @media (max-width:420px){.topbar-inner{gap:7px;padding-inline:10px}.brand{min-width:102px}.brand img{width:42px}.brand-text strong{font-size:11px}.brand-text span{font-size:9px}.nav a{font-size:11px;padding:8px 9px}.hero{min-height:70svh}.hero-content{padding-top:50px;transform:translateY(-3svh)}.hero-lead{font-size:14px}.quick-facts{grid-template-columns:1fr;max-width:330px}.car-btn{width:38px;height:38px}.section-head{margin-bottom:15px}.fixed-cta{padding-inline:9px}.fixed-cta a{min-height:51px;font-size:14px}}
-    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.carousel-track{transition:none}.hero-animation .eq i,.hero-animation .neon-orbit,.hero-animation .laser-line,.fact,.fact:before{animation:none}}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.carousel-track{transition:none}.hero-animation .eq i,.hero-animation .neon-orbit,.hero-animation .laser-line,.fact,.fact:before,.address,.mini-map,.pin,.pin span{animation:none}}
   </style>
   <script type="application/ld+json">
   {
@@ -232,6 +236,7 @@
         <a href="#menu">메뉴 및 가격</a>
         <a href="#lineup">라인업</a>
         <a href="#floor">조판(지도)</a>
+        <a href="#open">OPEN</a>
         <a href="#location">오시는 길</a>
         <a href="#qna">QNA</a>
       </nav>
@@ -272,9 +277,8 @@
     <section id="people" aria-labelledby="people-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">People & Mood</p>
-          <h2 id="people-title">사람들</h2>
-          <p class="desc"><span class="keyword">강남클럽</span>을 찾는 이용자가 가장 먼저 확인하는 요소는 실제 분위기입니다. 아래 이미지는 클럽 에이스의 플로어, DJ 부스, 테이블, 파티 무드를 확인하기 위한 갤러리입니다.</p>
+          <h2 id="people-title">People &amp; Mood</h2>
+          <p class="desc">아래 사진들은 2026.05 기준으로 촬영된 클럽 에이스의 플로어, DJ 부스, 테이블, 스테이지 분위기와 인파 현황 입니다. 금요일과 토요일과 같은 주말 기준으로 하루 평균 약 1천명 내외로 입장하며, 평일은 그보다는 좀 낮은 500명 ~ 700명 사이로 입장합니다.</p>
         </div>
         <div class="panel panel-pad">
           <div class="carousel people-carousel" data-carousel="people" aria-roledescription="carousel" aria-label="에이스 클럽 사람들 및 현장 분위기 이미지">
@@ -302,9 +306,8 @@
     <section id="menu" aria-labelledby="menu-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Menu & Price</p>
-          <h2 id="menu-title">메뉴 및 가격</h2>
-          <p class="desc"><b>에이스클럽</b> 메뉴 이미지는 좌우 버튼 또는 손가락 스와이프로 넘겨볼 수 있습니다. 실제 주문 가능 여부와 최종 가격은 현장 및 예약 시점에 따라 변동될 수 있으므로 예약 전 확인이 필요합니다.</p>
+          <h2 id="menu-title">Menu &amp; Price</h2>
+          <p class="desc">에이스 클럽의 주류와 가격구성 메뉴판 사진을 안내합니다. 전광판, 사진, 샴걸, 연출곡 등 요소는 메뉴판 사진 밑에 있는 가이드에 따라 달라질 수 있으며, 리큐르와 샴페인 또는 데킬라와 샴페인으로 혼합하여 주류를 구성하여 클러빙 하시는 것을 추천드립니다.</p>
         </div>
         <div class="panel panel-pad">
           <div class="carousel menu-carousel" data-carousel="menu" aria-roledescription="carousel" aria-label="에이스 클럽 메뉴 이미지">
@@ -335,9 +338,8 @@
     <section id="lineup" aria-labelledby="lineup-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">DJ Line-up</p>
-          <h2 id="lineup-title">라인업</h2>
-          <p class="desc"><b>라인업</b>은 당일 DJ 순서와 플레이 시간을 보여주는 타임테이블입니다. 일정은 현장 운영, 이벤트, DJ 사정에 따라 일부 조정될 수 있습니다.</p>
+          <h2 id="lineup-title">DJ Line-up</h2>
+          <p class="desc">금일 DJ라인업(타임테이블)입니다. 일정은 현장 운영, 이벤트, DJ 사정에 따라 일부 조정될 수 있으며, 특별한 이벤트가 있다면 별도로 공지하고 있습니다.</p>
         </div>
         <div class="panel panel-pad lineup-card">
           <div class="lineup-frame">
@@ -346,7 +348,6 @@
               <img src="assets/라인업-2026-05-19.webp" width="1080" height="1920" loading="lazy" decoding="async" alt="2026년 5월 19일 화요일 ACE CLUB SEOUL DJ 라인업 타임테이블">
             </picture>
           </div>
-          <p class="lineup-note">2026. 5. 19 CLUB ACE SEOUL DJ Line-up</p>
         </div>
       </div>
     </section>
@@ -354,9 +355,8 @@
     <section id="floor" aria-labelledby="floor-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Floor Map</p>
-          <h2 id="floor-title">조판(지도)</h2>
-          <p class="desc"><b>클럽 에이스</b> 테이블 조판은 메인·준메인·통로·왕자리 등 위치별 체감이 다릅니다. 예약 전 희망 구역과 예산을 함께 전달하면 배정 가능 범위를 더 빠르게 확인할 수 있습니다.</p>
+          <h2 id="floor-title">Floor Map</h2>
+          <p class="desc">에이스 클럽의 자리 및 배치도를 안내합니다. 자리별 예상 가격은 해당 사진 아래에 상세히 구분되어 있으며, 올레이디·인플루언서·생일·신년·크리스마스 등 각종 이벤트에 따라 가격이 조정될 수 있으므로 하단 카카오톡 또는 문자 문의를 통해 매니저에게 안내받으시길 바랍니다.</p>
         </div>
         <div class="panel map-frame">
           <picture>
@@ -373,11 +373,27 @@
       </div>
     </section>
 
+    <section id="open" aria-labelledby="open-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="open-title">OPEN</h2>
+          <p class="desc">강남 클럽 에이스는 365일 쉬는 날 없이 오픈 합니다. 클러빙에 참고 부탁드립니다.</p>
+        </div>
+        <div class="panel panel-pad open-card">
+          <div class="open-frame">
+            <picture>
+              <source srcset="assets/open.webp" type="image/webp">
+              <img src="assets/open.webp" width="1004" height="1343" loading="lazy" decoding="async" alt="365일 연중무휴 OPEN, CLUB ACE SEOUL 오픈 안내">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="location" aria-labelledby="location-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Location</p>
-          <h2 id="location-title">오시는 길</h2>
+          <h2 id="location-title">Location</h2>
         </div>
         <div class="location-card">
           <div class="address">
@@ -385,7 +401,7 @@
             <p>예약 문의: 박병규<br>문자: <a href="sms:01072433101">010 7243 3101</a><br>카톡: <a href="https://open.kakao.com/me/Pbk428" target="_blank" rel="noopener">오픈카톡 문의</a></p>
           </div>
           <div class="mini-map" role="img" aria-label="ACE CLUB SEOUL 위치 표시">
-            <div class="pin"><span>⌖</span><b>ACE CLUB SEOUL</b><small>597 Gangnam-daero, Seocho-gu, Seoul</small></div>
+            <div class="pin"><span aria-hidden="true"><svg viewBox="0 0 64 64" width="42" height="42" focusable="false"><path d="M32 5C20.4 5 11 14.4 11 26c0 15.1 21 33 21 33s21-17.9 21-33C53 14.4 43.6 5 32 5Z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><circle cx="32" cy="26" r="8" fill="none" stroke="currentColor" stroke-width="6"/></svg></span><b>ACE CLUB SEOUL</b><small>597 Gangnam-daero, Seocho-gu, Seoul</small></div>
           </div>
         </div>
       </div>
@@ -401,6 +417,9 @@
           <details class="faq-item" open><summary>Q. 게스트 무료입장 가능한가요?</summary><p>A. 여성분은 가능하고, 남성분들은 테이블을 잡아야 입장 가능 합니다.</p></details>
           <details class="faq-item"><summary>Q. 짐맡김 가능한가요?</summary><p>A. 코트체크 내 물품보관소를 이용해 주시기 바랍니다.</p></details>
           <details class="faq-item"><summary>Q. 잔술, 빠바틀 가능한가요?</summary><p>A. 인플루언서 등일 경우 재량에 따라 가능합니다.</p></details>
+          <details class="faq-item"><summary>Q. 서비스 바틀이 나올 수 있나요?</summary><p>A. 방문 당일을 기준으로 생일이라면 신분증을 지참후 하단 영업진에게 알려주시면 서비스 바틀을 제공해 드릴 수 있습니다.</p></details>
+          <details class="faq-item"><summary>Q. 조각 참여도 가능할까요?</summary><p>A. 조각은 자리 및 주류의 개수, 종류마다 가격이 상이하니 하단 카카오톡 문의를 통해 담당 매니저에게 연락해 보시기 바랍니다.</p></details>
+          <details class="faq-item"><summary>Q. 입장료가 따로 있나요?</summary><p>A. 여성분들은 게스트 입장으로 따로 입장료가 발생하지 않으나, 남성분들은 인원당 2만원으로 입장이 가능할 수 있습니다. 다만, 당일 업장 컨디션에 따라 유료입장도 어려울 수 있습니다.</p></details>
         </div>
       </div>
     </section>
