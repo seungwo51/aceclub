@@ -155,6 +155,22 @@
     @media (min-width:720px){.topbar-inner{padding-inline:24px}.brand img{width:60px}.nav a{font-size:13px;padding-inline:13px}.quick-facts{gap:14px}.fact{padding:17px}.zone-grid{grid-template-columns:repeat(2,1fr)}.guide-grid{grid-template-columns:repeat(2,1fr)}.location-card{grid-template-columns:1.05fr .95fr}.panel-pad{padding:20px}.hero-content{padding-bottom:46px}.fixed-cta a{font-size:16px}}
     @media (max-width:420px){.topbar-inner{gap:7px;padding-inline:10px}.brand{min-width:102px}.brand img{width:42px}.brand-text strong{font-size:11px}.brand-text span{font-size:9px}.nav a{font-size:11px;padding:8px 9px}.hero{min-height:70svh}.hero-content{padding-top:50px;transform:translateY(-3svh)}.hero-lead{font-size:14px}.quick-facts{grid-template-columns:1fr;max-width:330px}.car-btn{width:38px;height:38px}.section-head{margin-bottom:15px}.fixed-cta{padding-inline:9px}.fixed-cta a{min-height:51px;font-size:14px}}
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.carousel-track{transition:none}.hero-animation .eq i,.hero-animation .neon-orbit,.hero-animation .laser-line,.fact,.fact:before,.address,.mini-map,.pin,.pin span{animation:none}}
+
+
+    .topbar-inner{position:relative}
+    .header-kicker{display:inline-flex;align-items:center;gap:7px;margin-left:auto;padding:7px 10px;border:1px solid rgba(0,255,136,.34);border-radius:999px;background:rgba(0,255,136,.08);color:#fff;font-size:11px;font-weight:900;letter-spacing:.08em;white-space:nowrap;box-shadow:0 0 18px rgba(0,255,136,.15),inset 0 0 14px rgba(0,255,136,.04)}
+    .header-kicker .dot{flex:0 0 auto}
+    .menu-toggle{margin-left:0;width:42px;height:42px;border:1px solid rgba(255,255,255,.14);border-radius:14px;background:rgba(255,255,255,.045);display:grid;place-items:center;gap:0;padding:9px;cursor:pointer;box-shadow:0 0 18px rgba(155,53,255,.16)}
+    .menu-toggle span{display:block;width:20px;height:2px;border-radius:999px;background:#fff;box-shadow:0 0 10px rgba(255,43,209,.32);transition:transform .22s ease,opacity .22s ease}
+    .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+    .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .nav{position:absolute;top:calc(100% + 8px);right:14px;display:none;flex-direction:column;gap:7px;width:min(230px,calc(100vw - 28px));margin-left:0;padding:10px;border:1px solid rgba(255,255,255,.14);border-radius:18px;background:linear-gradient(180deg,rgba(15,7,26,.97),rgba(5,2,9,.97));box-shadow:0 0 28px rgba(155,53,255,.28),0 16px 44px rgba(0,0,0,.45);backdrop-filter:blur(16px);overflow:visible;z-index:60}
+    .nav.is-open{display:flex}
+    .nav a{width:100%;padding:12px 13px;border-radius:13px;font-size:12px;letter-spacing:.10em;text-align:left;background:rgba(255,255,255,.055)}
+    @media (max-width:820px){.hero{min-height:auto;display:block}.hero-content{padding-bottom:12px;transform:none}.hero-guide-grid{margin-top:10px}#people{padding-top:18px}.hero-lead .lead-line{display:block}}
+    @media (max-width:420px){.hero{min-height:auto}.hero-content{padding-top:38px;padding-bottom:8px;transform:none}.quick-facts{margin-top:18px}.hero-instagram-cta{margin-top:10px}.hero-guide-card{min-height:74px;padding:11px 10px}.header-kicker{font-size:9px;letter-spacing:.02em;padding:6px 8px;gap:5px}}
+
   </style>
   <script type="application/ld+json">
   {
@@ -231,13 +247,17 @@
         <img src="assets/ace-logo.png" width="390" height="459" alt="ACE CLUB SEOUL 로고">
         <span class="brand-text"><strong>ACE</strong><span>CLUB SEOUL</span></span>
       </a>
-      <nav class="nav" aria-label="주요 메뉴">
-        <a href="#people">사람들</a>
-        <a href="#menu">메뉴 및 가격</a>
-        <a href="#lineup">라인업</a>
-        <a href="#floor">조판(지도)</a>
+      <span class="header-kicker"><span class="dot"></span> Gangnam Ace Club Open</span>
+      <button class="menu-toggle" type="button" aria-label="상단 메뉴 열기" aria-controls="site-nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="주요 메뉴">
+        <a href="#people">PEOPLE</a>
+        <a href="#menu">PRICE</a>
+        <a href="#lineup">DJ</a>
+        <a href="#floor">MAP</a>
         <a href="#open">OPEN</a>
-        <a href="#location">오시는 길</a>
+        <a href="#location">LOCATION</a>
         <a href="#qna">QNA</a>
       </nav>
     </div>
@@ -253,13 +273,12 @@
       </div>
       <div class="hero-content">
         <div class="hero-animation" aria-hidden="true"><span class="neon-orbit"></span><span class="laser-line"></span><span class="eq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
-        <span class="kicker"><span class="dot"></span> Gangnam Night Club</span>
         <h1 id="main-title">ACE CLUB</h1>
-        <p class="hero-lead">서울시 서초구 강남대로 597에 있는 전 레이스 현 에이스 클럽 공식 사이트 입니다.</p>
+        <p class="hero-lead"><span class="lead-line">서울시 서초구 강남대로 597에 있는</span> <span class="lead-line">전 레이스 현 에이스 클럽 공식 사이트 입니다.</span></p>
         <div class="quick-facts" aria-label="에이스 클럽 핵심 정보">
           <div class="fact"><strong>하루 유동인구 1000명+</strong></div>
           <div class="fact"><strong>실시간 예약제 도입</strong></div>
-          <div class="fact"><strong>최상의 수질 컨디션 보장</strong></div>
+          <div class="fact"><strong>365일 매일 오픈</strong></div>
         </div>
         <a class="hero-instagram-cta" href="https://www.instagram.com/park_ace_club?igsh=MTV3ODE5bml1a3h1Zw%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="에이스 클럽 인스타그램 바로가기">
           <span>Instagram</span><strong>@park_ace_club 바로가기</strong>
@@ -443,6 +462,26 @@
 
   <script>
     (function(){
+      const menuToggle=document.querySelector('.menu-toggle');
+      const siteNav=document.querySelector('#site-nav');
+      function closeMenu(){
+        if(!menuToggle||!siteNav) return;
+        siteNav.classList.remove('is-open');
+        menuToggle.setAttribute('aria-expanded','false');
+      }
+      if(menuToggle&&siteNav){
+        menuToggle.addEventListener('click',()=>{
+          const isOpen=siteNav.classList.toggle('is-open');
+          menuToggle.setAttribute('aria-expanded',isOpen?'true':'false');
+        });
+        siteNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+        document.addEventListener('click',e=>{
+          if(!siteNav.classList.contains('is-open')) return;
+          if(siteNav.contains(e.target)||menuToggle.contains(e.target)) return;
+          closeMenu();
+        });
+        document.addEventListener('keydown',e=>{if(e.key==='Escape') closeMenu();});
+      }
       function initCarousel(root){
         const track=root.querySelector('.carousel-track');
         const slides=Array.from(root.querySelectorAll('.slide'));
