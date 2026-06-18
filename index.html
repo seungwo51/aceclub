@@ -117,6 +117,12 @@
     .panel{border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg,rgba(24,10,43,.72),rgba(9,4,16,.88));box-shadow:var(--shadow);overflow:hidden}.panel-pad{padding:16px}
     .map-frame{padding:10px;background:radial-gradient(circle at 50% 90%,rgba(155,53,255,.26),transparent 38%),rgba(255,255,255,.03)}
     .map-frame img{width:100%;border-radius:18px;border:1px solid rgba(255,255,255,.08);background:#050209}
+    .floor-gallery-frame{margin-top:14px}
+    .floor-gallery-carousel .carousel-viewport{border-radius:18px;background:#050209}
+    .floor-gallery-carousel .carousel-track{align-items:center}
+    .floor-gallery-carousel .slide{padding:0;background:#050209}
+    .floor-gallery-carousel .slide picture{display:block;width:100%;aspect-ratio:16/9;border-radius:18px;background:#050209}
+    .floor-gallery-carousel .slide img{width:100%;height:100%;object-fit:contain;border-radius:18px;border:1px solid rgba(255,255,255,.08);background:#050209}
     .zone-grid{display:grid;gap:10px;margin-top:14px}.zone-card{padding:16px;border:1px solid rgba(255,255,255,.12);border-radius:18px;background:rgba(255,255,255,.055)}
     .zone-card strong{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:17px}.zone-card strong em{font-style:normal;color:var(--pink);text-shadow:0 0 14px rgba(255,43,209,.45)}.zone-card p{margin:8px 0 0;color:var(--muted);font-size:13px;line-height:1.6;font-weight:650}
     .notice-box{margin-top:14px;padding:15px;border:1px solid rgba(255,212,106,.28);border-radius:18px;background:rgba(255,212,106,.08);color:#f4e7bd;font-size:13px;line-height:1.7;font-weight:700}
@@ -391,6 +397,28 @@
             <source srcset="assets/01-map.webp" type="image/webp">
             <img src="assets/01-map.jpg" width="1000" height="1187" loading="lazy" alt="ACE CLUB SEOUL 조판 지도, C존 D존 R존 T존 및 BAR DJ 위치 안내">
           </picture>
+        </div>
+        <div class="panel map-frame floor-gallery-frame">
+          <div class="carousel floor-gallery-carousel" data-carousel="floor-gallery" aria-roledescription="carousel" aria-label="에이스 클럽 플로어 및 테이블 구역 실사 이미지">
+            <button class="car-btn prev" type="button" aria-label="이전 플로어 사진">‹</button>
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <div class="slide"><picture><img src="assets/floor-gallery-01.webp" width="2048" height="1152" loading="lazy" decoding="async" alt="에이스 클럽 플로어 및 테이블 구역 실사 이미지 1"></picture></div>
+                <div class="slide"><picture><img src="assets/floor-gallery-02.webp" width="2048" height="1152" loading="lazy" decoding="async" alt="에이스 클럽 플로어 및 테이블 구역 실사 이미지 2"></picture></div>
+                <div class="slide"><picture><img src="assets/floor-gallery-03.webp" width="2048" height="1152" loading="lazy" decoding="async" alt="에이스 클럽 플로어 및 테이블 구역 실사 이미지 3"></picture></div>
+                <div class="slide"><picture><img src="assets/floor-gallery-04.webp" width="2048" height="1152" loading="lazy" decoding="async" alt="에이스 클럽 플로어 및 테이블 구역 실사 이미지 4"></picture></div>
+                <div class="slide"><picture><img src="assets/floor-gallery-05.webp" width="2048" height="1152" loading="lazy" decoding="async" alt="에이스 클럽 플로어 및 테이블 구역 실사 이미지 5"></picture></div>
+                <div class="slide"><picture><img src="assets/floor-gallery-06.webp" width="2048" height="1152" loading="lazy" decoding="async" alt="에이스 클럽 플로어 및 테이블 구역 실사 이미지 6"></picture></div>
+                <div class="slide"><picture><img src="assets/floor-gallery-07.webp" width="2048" height="1152" loading="lazy" decoding="async" alt="에이스 클럽 플로어 및 테이블 구역 실사 이미지 7"></picture></div>
+                <div class="slide"><picture><img src="assets/floor-gallery-08.webp" width="2048" height="1152" loading="lazy" decoding="async" alt="에이스 클럽 플로어 및 테이블 구역 실사 이미지 8"></picture></div>
+                <div class="slide"><picture><img src="assets/floor-gallery-09.webp" width="2048" height="1152" loading="lazy" decoding="async" alt="에이스 클럽 플로어 및 테이블 구역 실사 이미지 9"></picture></div>
+                <div class="slide"><picture><img src="assets/floor-gallery-10.webp" width="2048" height="1152" loading="lazy" decoding="async" alt="에이스 클럽 플로어 및 테이블 구역 실사 이미지 10"></picture></div>
+                <div class="slide"><picture><img src="assets/floor-gallery-11.webp" width="2048" height="1152" loading="lazy" decoding="async" alt="에이스 클럽 플로어 및 테이블 구역 실사 이미지 11"></picture></div>
+              </div>
+            </div>
+            <button class="car-btn next" type="button" aria-label="다음 플로어 사진">›</button>
+            <div class="dots" aria-label="플로어 사진 선택"></div>
+          </div>
         </div>
         <div class="zone-grid">
           <div class="zone-card"><strong>C존(메인) <em>300만원 ~</em></strong><p>메인 무드와 동선 접근성이 강한 구역입니다.</p></div>
