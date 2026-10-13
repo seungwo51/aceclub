@@ -134,6 +134,13 @@
     .wdjf-carousel .slide img{width:100%;height:min(82vh,920px);object-fit:contain;border-radius:22px;border:1px solid rgba(255,255,255,.1);background:#050209}
     .wdjf-note{margin:12px 0 0;color:#d8cfea;font-size:13px;line-height:1.65;font-weight:700;text-align:center}
     @media (max-width:520px){.wdjf-carousel .slide img{height:min(76vh,680px)}.wdjf-note{text-align:left;font-size:12px}}
+    .menu-carousel .carousel-viewport{background:#050209;border-radius:22px}
+    .menu-carousel .carousel-track{align-items:center}
+    .menu-carousel .slide figure,.menu-carousel .slide picture{width:100%;display:flex;align-items:center;justify-content:center;background:#050209;border-radius:22px}
+    .menu-carousel .slide img{width:100%;height:min(82vh,920px);object-fit:contain;border-radius:22px;border:1px solid rgba(255,255,255,.1);background:#050209}
+    @media (max-width:520px){.menu-carousel .slide img{height:min(76vh,680px)}
+      .menu-carousel .slide-land picture{position:relative;height:min(76vh,680px);container-type:size;overflow:hidden;border:1px solid rgba(255,255,255,.1)}
+      .menu-carousel .slide-land img{position:absolute;top:50%;left:50%;width:100cqh;height:100cqw;max-width:none;border:0;border-radius:0;transform:translate(-50%,-50%) rotate(90deg)}}
     .car-btn{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.58);color:#fff;font-size:24px;font-weight:900;display:grid;place-items:center;box-shadow:0 0 18px rgba(155,53,255,.25);z-index:4}.car-btn.prev{left:10px}.car-btn.next{right:10px}.dots{display:flex;justify-content:center;gap:7px;margin-top:12px}.dots button{width:8px;height:8px;border:0;border-radius:999px;background:rgba(255,255,255,.26);padding:0}.dots button[aria-current="true"]{width:26px;background:linear-gradient(90deg,var(--pink),var(--purple));box-shadow:0 0 14px rgba(255,43,209,.42)}
     .guide-grid{display:grid;gap:10px;margin-top:14px}.guide-card{padding:15px;border:1px solid rgba(255,255,255,.10);border-radius:18px;background:rgba(255,255,255,.055)}.guide-card strong{display:block;font-size:15px;color:#fff}.guide-card p,.guide-card ul{margin:7px 0 0;color:#d8cfea;font-size:13px;line-height:1.65;font-weight:650}.guide-card ul{padding-left:18px}.guide-card li+li{margin-top:4px}.guide-card .price{color:var(--pink);font-weight:950;text-shadow:0 0 12px rgba(255,43,209,.36)}
     .dress{margin-top:14px;padding:15px 16px;border-left:4px solid var(--pink);border-radius:16px;background:linear-gradient(90deg,rgba(255,43,209,.13),rgba(255,255,255,.04));line-height:1.72;color:#efe7ff;font-size:14px;font-weight:700}.dress b{color:#fff}
@@ -370,7 +377,7 @@
             <button class="car-btn prev" type="button" aria-label="이전 메뉴">‹</button>
             <div class="carousel-viewport">
               <div class="carousel-track">
-                <div class="slide"><figure><picture><source srcset="assets/02-menu.webp" type="image/webp"><img src="assets/02-menu.jpg" width="900" height="1600" loading="lazy" alt="ACE CLUB SEOUL 샴페인, 코냑, 위스키, 보드카, 데킬라 메뉴 및 가격표"></picture><figcaption class="sr-only">메뉴 및 가격 1</figcaption></figure></div>
+                <div class="slide slide-land"><figure><picture><source srcset="assets/02-menu.webp" type="image/webp"><img src="assets/02-menu.jpg" width="900" height="1600" loading="lazy" alt="ACE CLUB SEOUL 샴페인, 코냑, 위스키, 보드카, 데킬라 메뉴 및 가격표"></picture><figcaption class="sr-only">메뉴 및 가격 1</figcaption></figure></div>
                 <div class="slide"><figure><picture><source srcset="assets/03-menu.webp" type="image/webp"><img src="assets/03-menu.jpg" width="900" height="1600" loading="lazy" alt="ACE CLUB SEOUL 샴페인 세트 메뉴 및 가격표"></picture><figcaption class="sr-only">메뉴 및 가격 2</figcaption></figure></div>
                 <div class="slide"><figure><picture><source srcset="assets/04-menu.webp" type="image/webp"><img src="assets/04-menu.jpg" width="900" height="1600" loading="lazy" alt="ACE CLUB SEOUL 스와로브스키 에디션 아르망디 가격 안내"></picture><figcaption class="sr-only">메뉴 및 가격 3</figcaption></figure></div>
               </div>
